@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+	version="2.4">
+
+	<display-name>Java Secure Web Starter</display-name>
+	<description> </description>
+
+	<servlet>
+		<servlet-name>secure.web.starter.good</servlet-name>
+		<servlet-class>secure.web.starter.good.GoodServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>secure.web.starter.good</servlet-name>
+		<url-pattern>/GoodServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+        <servlet-name>secure.web.starter.bad</servlet-name>
+        <servlet-class>secure.web.starter.bad.BadServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>secure.web.starter.bad</servlet-name>
+        <url-pattern>/BadServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>
