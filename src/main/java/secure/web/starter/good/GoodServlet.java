@@ -11,19 +11,19 @@ import org.owasp.encoder.*;
 @WebServlet("/GoodServlet")
 public class GoodServlet extends HttpServlet {
 
-    // example patterns for input validation
+    // Example patterns for input validation
     private static final Pattern alphanumPattern = Pattern.compile("^[a-zA-Z0-9]+$");
     private static final Pattern strongPasswordPattern = Pattern.compile("(?=^.{6,}$)((?=.*[A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z]))^.*");
 
     public void init() throws ServletException {
     }
     
-    // use Post to avoid sensitive data disclosed in URL parameters
+    // Use Post to avoid sensitive data disclosed in URL parameters instead of Get
     public void doPost (HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         try{
            String username = request.getParameter("username");
            
-           // validate input
+           // Validate every input parameter
            if ( username == null || !alphanumPattern.matcher( username ).matches()) {
                throw new Exception( "Improper name format." );
            }
@@ -31,29 +31,29 @@ public class GoodServlet extends HttpServlet {
            if ( password == null || !strongPasswordPattern.matcher( password ).matches()) {
                throw new Exception(     "Improper password format." );
            }
-           // Use the input data to do something
+           // Where validated input parameters are used for processing
            // ...
            // ...
            
-           // prepare a response page
-           // set up Header for security
-           response.setContentType("text/html;charset=UTF-8");
-              // if returns a json array
+           // When prepare a response page
+           // Set up the HTTP Header properly for security
+           response.setContentType("text/html;charset=UTF-8"); // Always specify proper content type
+              // If a json array is returned
               // response.setContentType("application/json");
               // response.setCharacterEncoding("UTF-8");
-           response.setHeader("Content-Security-Policy", "script-src 'self'");
+           response.setHeader("Content-Security-Policy", "script-src 'self'");  // Apply proper CSP policies 
            Cookie[] cookies = request.getCookies();
            if (cookies != null){
               for (int i = 0; i < cookies.length; i++) {
-                  cookies[i].setHttpOnly(true);
-                  cookies[i].setSecure(true);
+                  cookies[i].setHttpOnly(true);                // Always restrict script access to cookies
+                  cookies[i].setSecure(true);                  // Always use secure transport to send cookies, e.g. HTTPS
                   response.addCookie(cookies[i]);
               }
            }
            
            // Encode output
            response.getWriter().println("<html><body>Welcome! " +
-               Encode.forHtmlContent(username) + "</body></html>");
+               Encode.forHtmlContent(username) + "</body></html>");  // Encode the input parameters in returning HTML pages
        } catch(Exception e ) {
            response.sendError( response.SC_BAD_REQUEST, e.getMessage() );
        }

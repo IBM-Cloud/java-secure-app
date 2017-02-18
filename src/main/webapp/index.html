@@ -25,7 +25,7 @@
 				
 				This shows how the secure server code blocks the attack.			
 				<form action="GoodServlet" method="post">
-				    Username: <input type="text" name="username" value="<script>alert('You Are Attacked! This attack script is now running on your browser. It could have sent your credentials to the attacker server.');</script>"/>
+				    Username: <input type="text" name="username" value="<script>alert('But this script is blocked, not executed, when reflected to the browser from the secure server');</script>"/>
 					Password: <input type="text" name="password" value="*****" />
   					<input type="submit" value="Submit"/>
 				</form>
