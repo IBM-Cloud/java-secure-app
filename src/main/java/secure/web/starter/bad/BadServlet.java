@@ -16,7 +16,8 @@ public class BadServlet extends HttpServlet {
         String password = request.getParameter("password");
         response.setContentType("text/html;charset=UTF-8");
         // The input is not validated. When added to the returning HTML page without being encoded, 
-        // a malicious script embedded in the input may be executed in the Browser. A XSS vulnerability is present. 
+        // a malicious script embedded in the input may be executed in the Browser.
+        // A XSS vulnerability is present. 
         response.getWriter().println("<html><body>Welcome! " + username + "</body></html>");
     }
     

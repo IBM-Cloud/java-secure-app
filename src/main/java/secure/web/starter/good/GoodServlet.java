@@ -38,7 +38,7 @@ public class GoodServlet extends HttpServlet {
            // When prepare a response page
            // Set up the HTTP Header properly for security
            response.setContentType("text/html;charset=UTF-8"); // Always specify proper content type
-              // If a json array is returned
+              // If a json array is returned:
               // response.setContentType("application/json");
               // response.setCharacterEncoding("UTF-8");
            response.setHeader("Content-Security-Policy", "script-src 'self'");  // Apply proper CSP policies 
