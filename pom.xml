@@ -59,7 +59,7 @@
 					<artifactId>maven-war-plugin</artifactId>
 					<configuration>
 						<failOnMissingWebXml>false</failOnMissingWebXml>
-						<warName>secure-sample-app</warName>
+						<warName>GetStartedSecureJava</warName>
 					</configuration>
 				</plugin>
 				<plugin>
