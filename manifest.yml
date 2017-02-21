@@ -2,6 +2,6 @@
 applications:
  - name: GetStartedSecureJava
    random-route: true
-   path: target/java-secure-web.war
+   path: target/secure-sample-app.war
    memory: 512M
    instances: 1
