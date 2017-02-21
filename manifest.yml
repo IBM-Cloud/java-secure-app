@@ -1,9 +1,7 @@
 ---
 applications:
-- path: target/java-secure-web.war
-  memory: 512M
-  instances: 1
-  domain: stage1.mybluemix.net
-  name: java-secure-web-starter
-  host: java-secure-web-starter
-  disk_quota: 1024M
+ - name: GetStartedSecureJava
+   random-route: true
+   path: target/java-secure-web.war
+   memory: 512M
+   instances: 1
