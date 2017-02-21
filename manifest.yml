@@ -4,4 +4,4 @@ applications:
    random-route: true
    path: target/GetStartedSecureJava.war
    memory: 512M
-   instances: 1
+   instances:  1
