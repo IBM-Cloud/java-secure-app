@@ -1,9 +1,10 @@
 ---
 applications:
  - name: GetStartedSecureJava
-   random-route: true
-   random-route: true
+   name: GetStartedSecureJava
    random-route: true
    path: target/GetStartedSecureJava.war
+   path: target/GetStartedSecureJava.war
+   memory: 512M
    memory: 512M
    instances:  1
