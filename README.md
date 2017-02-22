@@ -17,7 +17,7 @@ Use this secure application as a starting point of a new Liberty application dev
 ## Some details and help			 
 The BadSerlet.java is an example insecure code that developers may write if without care. The GoodServlet.java contains a number of good secure coding practices such as input validation, output encoding, secure Http Header settings, and Content Security Policy. These are key countermeasures against XSS. Applying them can also mitigate other vulnerabilities such as some injection and directory traversal. 
 
-IBM developers may check out a Secure Coding Adviser (https://secure-coding-advisor.stage1.mybluemix.net/) and find more live XSS lessons, bad-code verse good-code examples, and an education module for XSS attacks and defenses. Non-IBM developers can refer to an excellent resource at OWASP about XSS prevention (https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet) to learn more about XSS and its countermeasures. 		
+IBM developers may check out a Secure Coding Adviser (https://secure-coding-advisor.stage1.mybluemix.net/) and find more live XSS lessons, bad-code verse good-code examples, and an education module for XSS attacks and defenses. Non-IBM developers can refer to an excellent resource at OWASP on XSS prevention (https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet) to learn more about XSS and its countermeasures. 		
 
 ## Code against other security vulnerabilities
 
