@@ -19,7 +19,7 @@ The BadSerlet.java is an example insecure code that developers may write if with
 
 IBM developers may check out a Secure Coding Adviser (https://secure-coding-advisor.stage1.mybluemix.net/) and find more live XSS lessons, bad-code verse good-code examples, and an education module for XSS attacks and defenses. Non-IBM developers can refer to an excellent resource at OWASP about XSS prevention (https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet) to learn more about XSS and its countermeasures. 		
 
-## Code against other security vulnearbilities
+## Code against other security vulnerabilities
 
 In the near future, we intend to incorporate more secure coding examples to mitigate other common security vulnerabilities, such as session hijacking, cross-site request forgery, and SQL/command injection, etc.
 
@@ -29,4 +29,4 @@ We are happy to accept external contributions to this project, be it in the form
 
 ## Disclaimer
 
-Like other IBM-Bluemix sample applications, this is an as-is code serving as an education material with limited support as described in the Contribute section above.
+Like other sample applications in github.com/IBM-Bluemix, this is an as-is code serving as an education material with limited support as described in the Contribute section above.
