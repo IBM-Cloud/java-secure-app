@@ -12,12 +12,12 @@ A security vulnerability can be exploited by various security attacks. An attack
 Instead of having you to learn first the theory of XSS attacks and remedial techniques before starting to develop a web application, a good secure sample application including the coding examples of key secure coding practices that prevent XSS can help you get started development right away while quickly learn and apply the XSS prevention techniques to protect your application as you write it. This starter application is it.
 
 ## How to use it
-Use this secure application as a starting point of a new Liberty application development. Learn the XSS countermeasure code in it and apply them to the operations of the application API. The countermeasures will prevent malicious user input to cause damages to your application on the server and the user info on the browser, mitigating or preventing XSS attacks.
+Use this secure application as a starting point of a new Liberty application development. Learn the XSS countermeasure code in it and apply them to the operations of the application API. The countermeasures will prevent malicious user input to cause damages to your application on the server and the user data on the browser, mitigating the XSS attacks or preventing them altogether.
 
 ## Some details and help			 
 The BadSerlet.java is an example insecure code that developers may write if without care. The GoodServlet.java contains a number of good secure coding practices such as input validation, output encoding, secure Http Header settings, and Content Security Policy. These are key countermeasures against XSS. Applying them can also mitigate other vulnerabilities such as some injection and directory traversal. 
 
-IBM developers may check out a Secure Coding Adviser (https://secure-coding-advisor.stage1.mybluemix.net/) and find more live XSS lessons, bad-code verse good-code examples, and an education module for XSS attacks and defenses. Non-IBM developers can refer to an excellent resource at OWASP on XSS prevention (https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet) to learn more about XSS and its countermeasures. 		
+IBM developers may check out the Secure Coding Advisor (https://secure-coding-advisor.stage1.mybluemix.net/) and find live XSS lessons, bad-code verse good-code examples, and an education module for XSS attacks and defenses. Non-IBM developers can refer to an excellent resource at OWASP on XSS prevention (https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet) to learn more about XSS and its countermeasures. 		
 
 ## Code against other security vulnerabilities
 
