@@ -1,10 +1,10 @@
-# Getting started to Develop Your Secure Web Applications
+# Writing Secure Java Web Applications
 
 ## Overview
 All web applications must be designed and coded with security in mind to avoid introducing severe security vulnerabilities. This secure starter application helps you write a more secure Liberty Java code right when you start the development. It helps you code to avoid or mitigate most of Cross-Site Scripting (XSS) issues in your application.
 
 ## Run the application on Bluemix or locally
-You may download this secure starter application from https://github.com/IBM-Bluemix/get-started-secure-java, build and deploy it on Bluemix or locally the same way as you do with the get-started-java sample application - https://github.com/IBM-Bluemix/get-started-java	
+You may download this secure starter application, build and deploy it on Bluemix or locally the same way as you do with the [get-started-java sample application](https://github.com/IBM-Bluemix/get-started-java)
 
 ## Background
 A security vulnerability can be exploited by various security attacks. An attack may cause stealth of credentials, loss of data and function, disruption of services, and a serious damage to the reputation and revenue of a business. Cross-Site-Scripting is one of the common security vulnerabilities found in most web applications that must be avoided.
