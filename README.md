@@ -5,7 +5,9 @@ All web applications must be designed and coded with security in mind to avoid i
 
 ## Run the application on Bluemix or locally
 Deploy it directly to Bluemix:
+
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM-Bluemix/java-secure-app)
+
 Or, download this secure starter application, build and deploy it on Bluemix or locally the same way as you do with the [get-started-java sample application](https://github.com/IBM-Bluemix/get-started-java)
 
 ## Background
