@@ -9,6 +9,11 @@ Deploy it directly to Bluemix:
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/IBM-Bluemix/java-secure-app)
 
 Or, download this secure starter application, build and deploy it on Bluemix or locally the same way as you do with the [get-started-java sample application](https://github.com/IBM-Bluemix/get-started-java)
+```
+git clone https://github.com/IBM-Bluemix/java-secure-app
+cd java-secure-app
+mvn install liberty:run-server
+```
 
 ## Background
 A security vulnerability can be exploited by various security attacks. An attack may cause stealth of credentials, loss of data and function, disruption of services, and a serious damage to the reputation and revenue of a business. Cross-Site-Scripting is one of the common security vulnerabilities found in most web applications that must be avoided.
