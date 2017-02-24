@@ -14,6 +14,7 @@ git clone https://github.com/IBM-Bluemix/java-secure-app
 cd java-secure-app
 mvn install liberty:run-server
 ```
+View the app at [localhost:9080/GetStartedSecureJava/](http://localhost:9080/GetStartedSecureJava/)
 
 ## Background
 A security vulnerability can be exploited by various security attacks. An attack may cause stealth of credentials, loss of data and function, disruption of services, and a serious damage to the reputation and revenue of a business. Cross-Site-Scripting is one of the common security vulnerabilities found in most web applications that must be avoided.
